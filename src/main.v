@@ -4,7 +4,7 @@
 //Grupo: Los Cracks
 //Codigos: 2190407 2190418 2190427
 module main(
-    input [15:0] co,
+    input [7:0] co,
     input st,
     input clk,
     output [15:0] x,
