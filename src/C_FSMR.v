@@ -3,7 +3,7 @@
 module C_FSMR(
     input clk,
     input st,
-    input [15:0] co,
+    input [7:0] co,
     input r,
     input [19:0] k,
     output reg Mx, Rx, Ik, Pk, Sk, Mr, Pr, Ir
