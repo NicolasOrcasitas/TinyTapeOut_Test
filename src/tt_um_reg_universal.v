@@ -4,11 +4,12 @@ module tt_um_reg_universal (
     input [7:0] iu_in,
     output [7:0] uo_out,
     input clk,
-    input ena
+    input ena,
+    input rst_n
 );
 
 assign CLOCK = clk;
-assign RESET = uio_in[1];
+assign RESET = rst_n;
 assign ENABLE = ena;
 
 assign CTRL = uio_in[4:5];
