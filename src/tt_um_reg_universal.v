@@ -5,7 +5,8 @@ module tt_um_reg_universal (
     output [7:0] uo_out,
     input clk,
     input ena,
-    input rst_n
+    input rst_n,
+    input uio_oe
 );
 
 assign CLOCK = clk;
