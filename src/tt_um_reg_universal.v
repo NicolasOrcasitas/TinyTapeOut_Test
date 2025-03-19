@@ -6,7 +6,7 @@ module tt_um_reg_universal (
     input clk,
     input ena,
     input rst_n,
-    output uio_oe
+    output uio_oe[7:0]
 );
 
 assign CLOCK = clk;
@@ -27,7 +27,7 @@ wire [7:0] CON1, CON2;
 
 assign CON1 = {Q_INT[n-2:0], S_IN};
 assign CON2 = {S_IN, Q_INT[n-1:1]};
-assign uio_oe = 0;
+    assign uio_oe[7:0] = 0;
 
 
 // MUX 4:1
