@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module reg_universal (
+module tt_um_reg_universal (
     input [7:0] uio_in,
     input [7:0] iu_in,
     output [7:0] uo_out	
