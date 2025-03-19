@@ -2,10 +2,11 @@
 module tt_um_reg_universal (
     input [7:0] uio_in,
     input [7:0] iu_in,
-    output [7:0] uo_out	
+    output [7:0] uo_out,
+    input clk
 );
 
-assign CLOCK = uio_in[0];
+assign CLOCK = clk;
 assign RESET = uio_in[1];
 assign ENABLE = uio_in[2];
 
