@@ -27,7 +27,7 @@ wire [7:0] CON1, CON2;
 
 assign CON1 = {Q_INT[n-2:0], S_IN};
 assign CON2 = {S_IN, Q_INT[n-1:1]};
-    assign [7:0] uio_oe = 0;
+assign uio_oe = 0;
 
 
 // MUX 4:1
