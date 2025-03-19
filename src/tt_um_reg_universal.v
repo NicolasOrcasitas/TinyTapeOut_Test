@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 module tt_um_reg_universal (
     input [7:0] uio_in,
-    input [7:0] iu_in,
+    input [7:0] ui_in,
     output [7:0] uo_out,
     input clk,
     input ena,
@@ -16,7 +16,7 @@ assign CTRL = uio_in[4:5];
 
 assign S_IN = uio_in[7];
 
-assign D = iu_in;
+assign D = ui_in;
 
 
 // DECLARACIÓN DE VARIABLES
