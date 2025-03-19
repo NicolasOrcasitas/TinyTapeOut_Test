@@ -26,8 +26,8 @@ reg [7:0] Q_INT = 0;
 reg [7:0] Y;
 wire [7:0] CON1, CON2;
 
-assign CON1 = {Q_INT[n-2:0], S_IN};
-assign CON2 = {S_IN, Q_INT[n-1:1]};
+    assign CON1 = {Q_INT[6:0], S_IN};
+    assign CON2 = {S_IN, Q_INT[7:1]};
 assign uio_oe = 0;
 assign uio_out = 0;
 
